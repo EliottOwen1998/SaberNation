@@ -1,0 +1,108 @@
+/* contact.css */
+
+/* General Styling */
+body {
+  font-family: 'Aurebesh', sans-serif; /* Optional Star Wars-inspired font */
+  background-color: #1c1c1e; /* Dark theme background */
+  color: #d1d1d6; /* Light gray text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section Styling */
+.Contact\ Us {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Contact\ Us h2 {
+  color: #ffc107; /* Gold/yellow for emphasis */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Contact\ Us p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+}
+
+.line {
+  height: 2px;
+  background: linear-gradient(to right, #ffc107, #1c1c1e); /* Gold fading to background */
+  margin: 1.5rem auto;
+  width: 80%;
+}
+
+/* Contact Form Styling */
+.contact-container {
+  background: #252527; /* Slightly lighter background for contrast */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #ffc107;
+}
+
+.contact-container input,
+.contact-container textarea {
+  background: #1c1c1e;
+  border: 1px solid #3a3a3c;
+  border-radius: 4px;
+  color: #d1d1d6;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none;
+  border-color: #ffc107;
+  box-shadow: 0 0 4px #ffc107;
+}
+
+.contact-container button {
+  background: linear-gradient(to right, #ffc107, #ff5722);
+  color: #1c1c1e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-container button:hover {
+  transform: scale(1.05);
+}
+
+/* Center Image Styling */
+.center-image {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+

@@ -1,0 +1,466 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, .card h3, .hero-content h1, .action-figures h2, .clothing-section h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero-content h1, .action-figures h2, .clothing-section h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Happy New Year Image Section */
+.happy-new-year img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image keeps its aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Content Wrapper (overall layout container) */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Ronin Slider (left section of content) */
+.ronin-slider {
+  width: 30%; /* Retained original width */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c1c; /* Slightly lighter dark background for modern feel */
+  border-radius: 10px; /* Retained original border radius */
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  overflow: hidden; /* Ensures images and content don't overflow the container */
+}
+
+.ronin-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Matches the slider’s rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ronin-slider img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Slider Controls (Buttons for navigation) */
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.slider-controls button {
+  background-color: #333; /* Dark gray for buttons */
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 45%; /* Ensures buttons take equal space */
+}
+
+.slider-controls button:hover {
+  background-color: #444; /* Slightly lighter on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.slider-controls button:active {
+  background-color: #222; /* Darker color on click */
+  transform: translateY(1px); /* Button presses down */
+}
+
+/* Hero Section (Right section of content) */
+.hero-section {
+  width: 65%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/hoth.jpg');
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column; /* Stack content vertically */
+  text-align: center; /* Center align text */
+}
+
+.catalog-button {
+  background-color: #ff9900;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Space the button from other content */
+}
+
+.catalog-button:hover {
+  background-color: #e68a00;
+}
+
+/* Action Figures Section */
+.action-figures {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.action-figures h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffc400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.action-figures p {
+  text-align: center;
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3 ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1); /* Image zoom effect */
+}
+
+.card h3 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff9900; /* Distinct color for price */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  display: block;
+  background-color: #ff9900;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #e68a00; /* Darker shade on hover */
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .action-figures h2 {
+    font-size: 28px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card .price {
+    font-size: 16px;
+  }
+}
+
+/* Video Block */
+.reviewVideo-container iframe {
+  align-self: center;
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Additional Content (Did You Know?) */
+.additional-content {
+  background-image: url('../images/cyber.jpg');
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 1100px;
+}
+
+.additional-content h2 {
+  font-size: 24px;
+}
+
+.additional-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.additional-content li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffc400;
+}
+
+/* Clothing Section */
+.clothing-section {
+  width: 100%;
+  margin-top: 40px;
+  background-image: url('../images/productsBackground.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 15px;
+}
+
+.clothing-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffc400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 194, 0, 0.8);
+}
+
+.clothing-section p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Card Grid for Clothing */
+.grid {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 30px; /* Adds spacing between the cards */
+  max-width: 1200px; /* Limit the grid's max width */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #1e1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  flex: 1; /* Ensures each card takes equal space */
+  max-width: 300px; /* Restricts max card size */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffc400;
+}
+
+.card p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card .btn {
+  display: block;
+  background-color: #ff9900;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #e68a00;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column; /* Stack the cards vertically on smaller screens */
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .clothing-section h2 {
+    font-size: 28px;
+  }
+
+  .card h3 {
+    font-size: 2px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card .price {
+    font-size: 16px;
+  }
+}
+/* Newsletter Section */
+.newsletter-section {
+  background-color: #111;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.newsletter-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.newsletter-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-button {
+  background-color: #ff9900;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.newsletter-button:hover {
+  background-color: #e68a00;
+}
+
+/* Divider Line */
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/* Fan Film Section */
+.fanfilm-container iframe {
+  width: 800px;
+  height: 315px;
+  margin-bottom: 50px;
+}
+

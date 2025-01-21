@@ -1,0 +1,342 @@
+/* Main Wrapper (Flexbox for layout control) */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* Happy New Year Image Styling */
+.happy-new-year {
+  text-align: center; /* Center align the image */
+  margin-bottom: 30px; /* Add some space below the image */
+}
+
+.happy-new-year img {
+  width: 100%; /* Make the image responsive */
+  height: 550px; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners for a softer look */
+  object-fit: cover; /* Ensure the image covers the area properly */
+}
+
+/* Content Wrapper (Grid layout) */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Sidebar (1/3), Main Content (2/3) */
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ronin Slider (1/3 width) */
+.ronin-slider {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Slider Info Section */
+.slider-info {
+  margin-bottom: 20px;
+}
+
+.promo-banner p {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #e63b07;
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: 'Orbitron';
+  color: #ffc400;
+  padding-top: 15px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffdd00;
+}
+
+/* Slider Image and Controls */
+.slider-image-container {
+  position: relative;
+}
+
+.slider-image-container img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.slider-controls button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-controls button:nth-child(1) {
+  left: 10px;
+}
+
+.slider-controls button:nth-child(2) {
+  right: 10px;
+}
+
+/* Hero Section (2/3 width) */
+.hero-section {
+  background-image: url('../images/hoth.jpg');
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.catalog-button {
+  background: linear-gradient(to right, #ffc107, #ff5722);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: #222;
+  cursor: pointer;
+}
+
+.catalog-button:hover {
+  background-color: #e5c700;
+}
+
+/* Action Figures Section */
+.action-figures {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 0;
+  grid-column: 1;
+}
+
+.action-figures .section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.figures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.figure-card {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.figure-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.figure-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.figure-card button:hover {
+  background-color: #d62839;
+}
+
+/* Additional Content Section */
+.additional-content {
+  background-image: url('../images/cyber.jpg');
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  grid-column: 2;
+}
+
+.additional-content h2 {
+  margin-bottom: 10px;
+  color: #fffdfd;
+}
+
+.additional-content ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.additional-content li {
+  margin-bottom: 5px;
+}
+
+/* Review Video Section */
+.reviewVideo-container {
+  margin-top: 30px;
+  text-align: center;
+  grid-column: 2;
+  width: 100%;
+  padding: 20px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+/* Clothing Section */
+.clothing-section {
+  width: 100%;
+  padding: 20px;
+  background-image: url('../images/productsBackground.jpg');
+  color: white;
+}
+
+.clothing-content h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.clothing-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.clothing-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.clothing-item {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.clothing-item img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.clothing-item h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.shop-now-button {
+  background-color: #ffdd00;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.shop-now-button:hover {
+  background-color: #e5c700;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  width: 100%;
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+}
+
+.newsletter-button {
+  padding: 10px 20px;
+  background-color: #ffdd00;
+  color: #222;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.newsletter-button:hover {
+  background-color: #e5c700;
+}
+
+/* Fan Film Container */
+.fanfilm-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto; /* Optional: This centers the container itself within its parent */
+}
+
+/* Video Styling (if needed) */
+.fanfilm-container video {
+  max-width: 100%; /* Ensures the video doesn't exceed the container's width */
+  max-height: 100%; /* Ensures the video doesn't exceed the container's height */
+  object-fit: contain; /* Maintains the aspect ratio and ensures the video fits */
+}
+

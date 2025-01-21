@@ -1,0 +1,33 @@
+.meme-generator {
+    margin: 20px;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .meme-generator button {
+    background: linear-gradient(to right, #ffc107, #ff5722);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: #222;
+    cursor: pointer;
+  }
+  
+  .meme-generator button:hover {
+    background-color: #005a99;
+  }
+  
+  .meme img {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }

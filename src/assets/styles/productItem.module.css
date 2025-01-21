@@ -1,0 +1,89 @@
+.productCard {
+  background-color: #1d1d1d;
+  border: 1px solid #ffc400;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Center all child text and inline elements */
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.productCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.productLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.productImageDetail {
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 300px;  /* You can adjust the width to make the images smaller */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: cover;  /* Crop if necessary */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.price {
+  color: #ffd700;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Ensure the styles are more specific */
+.product-detail-page .product-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.product-detail-page .product-description,
+.product-detail-page .product-specifications {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.product-detail-page .product-description h3,
+.product-detail-page .product-specifications h3 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+
+.addToCartButton {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addToCartButton:hover {
+  background-color: #e6c300;
+  transform: scale(1.05);
+}

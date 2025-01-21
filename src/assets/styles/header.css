@@ -1,0 +1,198 @@
+/* Header Styles */
+header {
+  background-image: url('../images/sky.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px 40px;  /* Increase padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Stronger shadow for a more prominent header */
+  position: relative;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.6);  /* Slightly lighter border */
+  z-index: 10;
+}
+
+/* Flex Container for Header */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Header Title Container */
+.header-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Header Title */
+.header-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 70px; /* Slightly reduced font size for a more balanced look */
+  text-transform: uppercase;
+  color: #ffcc00; /* Star Wars gold */
+  text-shadow: 
+    2px 2px 3px rgba(0, 0, 0, 0.5), /* Soft shadow for subtle depth */
+    0px 0px 4px rgba(7, 158, 245, 0.5), /* Light blue shadow for minimal glow */
+    0px 0px 6px rgba(255, 204, 0, 0.4); /* Faint yellow highlight for a touch of glow */
+  letter-spacing: 2px; /* Keep spacing slightly increased for readability */
+  line-height: 1.2; /* Slightly more space between lines for readability */
+  font-weight: bold; /* Bold for emphasis */
+  text-align: left;
+  animation: glow 2s ease-in-out infinite alternate; /* Slower and subtler glow animation */
+}
+
+/* Glowing animation */
+@keyframes glow {
+  0% {
+    text-shadow: 
+      2px 2px 3px rgba(0, 0, 0, 0.5),
+      0px 0px 4px rgba(7, 158, 245, 0.5),
+      0px 0px 6px rgba(255, 204, 0, 0.4);
+  }
+  100% {
+    text-shadow: 
+      3px 3px 5px rgba(0, 0, 0, 0.6),
+      0px 0px 6px rgba(7, 158, 245, 0.6),
+      0px 0px 8px rgba(255, 204, 0, 0.5);
+  }
+}
+
+
+/* Nav Container */
+.nav-links {
+  display: flex;
+  margin-left: 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 30px;  /* Increased spacing between menu items */
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav Item */
+.nav-links li {
+  position: relative;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;  /* Slightly larger font */
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ccccd2;
+  text-decoration: none;  /* No underline on hover */
+  transform: scale(1.05);  /* Slight scaling effect for hover */
+}
+
+.nav-links a:active {
+  transform: scale(0.98);  /* Slight shrink on active state */
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+/* Button Style */
+.dropdown-toggle {
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem; /* Same size as nav links */
+}
+
+/* Initially hidden dropdown with opacity and visibility */
+.dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+/* Menu item styles */
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #ccccd2;
+}
+
+/* Show dropdown when parent is hovered */
+.dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+/* Logo and Cart Section */
+.logo-cart-container {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Adjust gap for better alignment */
+  padding-right: 20px;
+}
+
+.header-logo,
+.header-image {
+  height: 100px; /* Slightly larger logo */
+  object-fit: contain;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.cart-icon {
+  width: 70px;
+  transition: transform 0.3s ease;  /* Smooth hover effect */
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);  /* Scale up slightly on hover */
+}
+
+.cart-icon:active {
+  transform: scale(1.05);  /* Slight shrink on active state */
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 8px;
+}
+

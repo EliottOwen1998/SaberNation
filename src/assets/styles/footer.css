@@ -1,0 +1,134 @@
+.footer {
+  background-color:  #1c1c1e; /* Pure black for the background */
+  color: #ffd700; /* Gold for the text */
+  font-family: "Arial", sans-serif;
+  padding: 2rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ffd700; /* Gold border for separation */
+  padding-bottom: 1rem;
+}
+
+.footer-brand,
+.footer-support,
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h2,
+.footer h3 {
+  color: #ffd700; /* Gold for headings */
+  font-weight: bold;
+}
+
+.footer a {
+  color: #ffd700; /* Gold for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffffff; /* White for hover effect */
+}
+
+.footer-support ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-support li {
+  margin: 0.5rem 0;
+}
+
+.footer-middle {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.subscription {
+  margin: 1rem 0;
+}
+
+.subscription input {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 0.5rem;
+  border: 1px solid #ffd700; /* Gold border for input */
+  background-color: #121212; /* Dark background for input */
+  color: #ffd700; /* Gold text */
+}
+
+.subscription input::placeholder {
+  color: #ffd700;
+}
+
+.subscription button {
+  padding: 0.5rem 1rem;
+  background-color: #ffd700; /* Gold button background */
+  color: #000000; /* Black text */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.subscription button:hover {
+  background-color: #ffffff; /* White hover */
+  color: #000000; /* Black text */
+}
+
+.country-region {
+  margin-top: 1rem;
+}
+
+.country-region label {
+  color: #ffd700; /* Gold label text */
+  margin-right: 0.5rem;
+}
+
+.country-region select {
+  padding: 0.5rem;
+  background-color: #121212; /* Dark background */
+  color: #ffd700; /* Gold text */
+  border: 1px solid #ffd700;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ffd700; /* Gold border */
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-media span,
+.payment-options span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffd700; /* Gold text */
+}
+
+.social-media a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #ffd700; /* Gold for icons */
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ffffff; /* White hover effect */
+}
+
+.payment-options img {
+  max-width: 150px;
+  filter: brightness(1) invert(0.8); /* Adjust for gold styling */
+}
+

@@ -1,0 +1,252 @@
+/* Product page styles */
+/* Product page styles */
+.products-page main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.products-page .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four items per row */
+  gap: 40px; /* Adjusted to a more balanced gap between items */
+  width: 100%;
+  max-width: 1700px; /* Still provides space, but feel free to adjust */
+  margin: 0 auto;
+  padding-top: 60px; /* Less space from the header */
+  padding-bottom: 60px; /* Less space from the footer */
+  border: 3px solid #ffc700; /* Golden border around the entire grid */
+  padding: 40px;
+}
+
+.products-page .product-card {
+  background-color: #312f2f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 320px;
+  border: 3px solid #ffc700; /* Golden border around individual product cards */
+  margin: 0; /* Remove margin to prevent any unwanted spacing */
+}
+
+.products-page .product-card:hover {
+  transform: scale(1.05);
+}
+
+.products-page .product-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.products-page .product-card p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.products-page .product-card .price {
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffcc00;
+}
+
+/* Product detail page styles */
+.product-detail-page {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  margin-top: 5px;
+  background-image: url('../images/products\ background2.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Increased gap for more space between sections */
+  max-width: 1400px;
+  width: 100%;
+  margin-top: 10px; /* Increased margin-top to create more space at the top */
+  align-items: center; /* Center everything */
+  min-height: auto; /* Keeps the height from being too tall */
+  padding: 30px; /* Added padding to ensure the content isn't too close to the edges */
+  border-radius: 15px; /* Rounded corners for the background container */
+  border: 5px solid #ffd700; /* Golden border around the background image */
+  background-color:#292929;
+}
+
+.product-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* 3 equal columns */
+  gap: 40px; /* Space between columns */
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.product-title {
+  grid-column: 1 / -1; /* Spans all columns */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #ffd700; /* Golden color for the title */
+  text-align: center;
+  margin-bottom: 20px;
+}
+.product-image-container {
+  grid-column: 2; /* Center the image */
+  text-align: center;
+  background-color: #282727;
+  color: white;
+  padding: 25px;
+  border-radius: 10px; /* Rounded corners for the product image container */
+  border: 3px solid #ffd700; /* Golden border around the product image */
+  min-width: 350px; /* Prevent from getting too small */
+  position: relative;
+}
+
+.productImageDetail {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-price {
+  position: absolute; /* Position relative to the container */
+  bottom: 10px; /* Space from the bottom edge */
+  right: 10px; /* Space from the right edge */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: #ffd700; /* Golden text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product-description {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 25px;
+  border-radius: 10px; /* Rounded corners for the product description */
+  border: 3px solid #ffd700; /* Golden border around the product description */
+  min-width: 350px; /* Prevent from getting too small */
+}
+
+.product-specifications {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 25px;
+  border-radius: 10px; /* Rounded corners for the product specifications */
+  border: 3px solid #ffd700; /* Golden border around the product specifications */
+  min-width: 350px; /* Prevent from getting too small */
+}
+
+/* Container for the rating */
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between stars and text */
+  margin-top: 10px;
+}
+
+/* Stars style */
+.product-rating .star {
+  font-size: 20px;
+  color: gold; /* Color for filled stars */
+}
+
+.product-rating .star.empty {
+  color: #ccc; /* Color for empty stars */
+}
+
+/* Text for numeric rating */
+.product-rating-text {
+  font-size: 14px;
+  color: #555;
+  margin-left: 5px;
+}
+
+
+.product-image-container {
+  text-align: center;
+}
+
+.productImageDetail {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-description h3,
+.product-specifications h3 {
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.product-description p,
+.product-specifications ul {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.product-specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-specifications li {
+  margin-bottom: 10px;
+}
+
+.add-to-cart-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.addToCartButton {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.addToCartButton:hover {
+  background-color: #e6c300;
+  transform: scale(1.05);
+}

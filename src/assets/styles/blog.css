@@ -1,0 +1,261 @@
+/* Blog Page Layout */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Increased space between content and sidebar for better separation */
+    margin-top: 30px; /* More breathing space above */
+    flex-wrap: wrap; /* Allow the layout to be more flexible */
+}
+
+.blog-posts {
+    flex: 4; /* Adjusted flex to take up less space compared to the sidebar */
+    max-width: 1000px; /* Restrict the maximum width for better readability */
+    margin-right: 30px; /* Add space between posts and sidebar */
+}
+
+.blog-post {
+    background-color: #1a1a1a; /* Darker background for more contrast */
+    color: #f5f5f5; /* Lighter text for improved readability */
+    border-radius: 12px; /* Slightly round the corners for a softer look */
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Softer, more prominent shadow */
+    margin-bottom: 30px;
+    text-align: left; /* Align text to the left for a more natural reading flow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Lift the post slightly on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+.blog-post h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem; /* Increased size for better visual impact */
+    color: #ffc700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.blog-post .post-meta {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 25px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 25px auto;
+}
+
+.blog-post p {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    margin-bottom: 25px;
+    font-family: 'Arial', sans-serif;
+}
+
+.blog-post a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+    color: #ff6347;
+}
+
+/* Image Container (For Multiple Images) */
+.blog-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.blog-image-container .blog-image {
+    width: calc(50% - 15px); /* Make sure to have two images per row with proper spacing */
+    border-radius: 12px; /* Add rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for images */
+    transition: transform 0.3s ease;
+}
+
+.blog-image-container .blog-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.planet {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 200px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 12px; /* Rounded corners for video container */
+    margin-bottom: 30px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Sidebar Section */
+/* General Sidebar Styling */
+.forum {
+  flex: 1;
+  max-width: 100%;
+  background-color: #2a2a2a;
+  padding: 20px;
+  color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forum h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4e4e4e;
+  padding-bottom: 5px;
+  color: #e4e4e4;
+}
+
+.forum-discussion {
+  margin-bottom: 20px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.forum-discussion h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f0f0f0;
+  margin-bottom: 8px;
+}
+
+.forum-discussion p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.forum-discussion p strong {
+  font-weight: bold;
+  color: #e6b800;
+}
+
+/* Recent Posts Section */
+h3 + h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #4e4e4e;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #e6b800;
+  font-size: 1.1rem;
+}
+
+ul li a:hover {
+  color: #f4f4f4;
+}
+
+.forum-discussion:hover {
+  background-color: #444;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Blog Post Quote Styling */
+.blog-post blockquote {
+    background-color: #333;
+    border-left: 5px solid #ffc700;
+    padding: 25px;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #ddd;
+    margin: 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post blockquote p {
+    margin: 0;
+}
+
+blockquote p {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+blockquote footer {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Adjust space below the quote */
+.blog-post blockquote + p {
+    margin-top: 25px;
+}
+
+/* Adjust mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center; /* Center align on small screens */
+    }
+
+    .blog-posts {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .blog-image-container .blog-image {
+        width: 100%; /* Stack images vertically on small screens */
+    }
+  }
